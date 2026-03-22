@@ -2,20 +2,17 @@ import { FaDownload, FaStar, FaGooglePlay } from "react-icons/fa";
 
 const statsData = [
     {
-        icon: <FaDownload size={36} />,
         title: "Total Downloads",
         value: "29.6M",
         desc: "21% more than last month",
     },
     {
-        icon: <FaStar size={36} />,
         title: "Total Reviews",
         value: "906K",
         desc: "46% more than last month",
         hasBorder: true,
     },
     {
-        icon: <FaGooglePlay size={36} />,
         title: "Active Apps",
         value: "132+",
         desc: "31 more will Launch",
@@ -45,9 +42,8 @@ export default function StatsSection() {
                             <div className="text-lg">{stat.title}</div>
 
                             {/* Value */}
-                            <div className="text-4xl font-bold px-4 flex gap-12 text-center items-center">
-                                {stat.value} {/* Icon */}
-                                <div>{stat.icon}</div>
+                            <div className="text-4xl font-bold px-4">
+                                {stat.value}
                             </div>
 
                             {/* Description */}
