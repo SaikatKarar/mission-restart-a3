@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useInstall } from "../context/InstallContext";
 import { FaDownload, FaStar } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 export default function MyInstallations() {
     const { installedApps, uninstallApp } = useInstall();
@@ -28,9 +29,11 @@ export default function MyInstallations() {
 
     if (installedApps.length === 0) {
         return (
-            <p className="text-center py-20 text-gray-500">
-                No Apps Installed
-            </p>
+            <div className="flex flex-col items-center justify-center min-h-screen gap-6" >
+                <h2 className="text-3xl font-bold text-gray-800">
+                    No Apps Installed Yet
+                </h2>
+            </div >
         );
     }
 
@@ -102,11 +105,15 @@ export default function MyInstallations() {
                             </div>
 
                             <button
-                                onClick={() => uninstallApp(app.id)}
+                                onClick={() => {
+                                    uninstallApp(app.id);
+                                    toast.error("App Uninstalled");
+                                }}
                                 className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-md text-sm font-medium"
                             >
                                 Uninstall
                             </button>
+
                         </div>
                     ))}
                 </div>

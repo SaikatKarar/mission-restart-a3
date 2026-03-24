@@ -5,6 +5,7 @@ import { useInstall } from "../context/InstallContext";
 
 import { FaDownload, FaStar } from "react-icons/fa6";
 import { MdReviews } from "react-icons/md";
+import toast from "react-hot-toast";
 
 export default function AppDetails() {
   const { id } = useParams();
@@ -18,8 +19,10 @@ export default function AppDetails() {
 
   const handleInstall = () => {
     installApp(app);
+    toast.success("App Installed Successfully");
     navigate("/my-installations");
   };
+
   const { installedApps } = useInstall();
 
   const isInstalled = installedApps.find(i => i.id === app.id);

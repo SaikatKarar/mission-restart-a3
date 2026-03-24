@@ -1,20 +1,33 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const InstallContext = createContext();
 
 export const InstallProvider = ({ children }) => {
-    const [installedApps, setInstalledApps] = useState([]);
 
+    // Initial state directly from localStorage
+    const [installedApps, setInstalledApps] = useState(() => {
+        const data = localStorage.getItem("installedApps");
+        return data ? JSON.parse(data) : [];
+    });
+
+    useEffect(() => {
+        localStorage.setItem("installedApps", JSON.stringify(installedApps));
+    }, [installedApps]);
+
+    // Install
     const installApp = (app) => {
-        const exists = installedApps.find((item) => item.id === app.id);
-        if (!exists) {
-            setInstalledApps([...installedApps, app]);
-        }
+        setInstalledApps((prev) => {
+            const exists = prev.find((item) => item.id === app.id);
+            if (exists) return prev;
+            return [...prev, app];
+        });
     };
 
+    // Uninstall
     const uninstallApp = (id) => {
-        const updated = installedApps.filter((app) => app.id !== id);
-        setInstalledApps(updated);
+        setInstalledApps((prev) =>
+            prev.filter((app) => app.id !== id)
+        );
     };
 
     return (
@@ -26,5 +39,4 @@ export const InstallProvider = ({ children }) => {
     );
 };
 
-// custom hook
 export const useInstall = () => useContext(InstallContext);
