@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import apps from "../data/apps.json";
+import { useNavigate } from "react-router-dom";
+import { useInstall } from "../context/InstallContext";
 
 import { FaDownload, FaStar } from "react-icons/fa6";
 import { MdReviews } from "react-icons/md";
@@ -11,6 +13,16 @@ export default function AppDetails() {
   if (!app) {
     return <p className="text-center py-20">App Not Found</p>;
   }
+  const navigate = useNavigate();
+  const { installApp } = useInstall();
+
+  const handleInstall = () => {
+    installApp(app);
+    navigate("/my-installations");
+  };
+  const { installedApps } = useInstall();
+
+  const isInstalled = installedApps.find(i => i.id === app.id);
 
   return (
     <main className="min-h-screen w-11/12 mx-auto py-20 space-y-12">
@@ -69,8 +81,15 @@ export default function AppDetails() {
 
           </div>
 
-          <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg shadow-md transition font-semibold">
-            Install Now ({app.size} MB)
+          <button
+            onClick={handleInstall}
+            disabled={isInstalled}
+            className={`px-8 py-3 rounded-lg shadow-md font-semibold ${isInstalled
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-green-500 hover:bg-green-600 text-white"
+              }`}
+          >
+            {isInstalled ? "Installed" : `Install Now (${app.size} MB)`}
           </button>
 
         </div>
