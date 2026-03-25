@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Forest: Focus for Productivity",
-        "image": "../public/icon-005.webp",
+        "image": "/icon-005.webp",
         "companyName": "Forest Inc.",
         "description": "Stay focused and grow virtual trees while working.",
         "size": 25,
@@ -35,7 +35,7 @@
     {
         "id": 2,
         "title": "SmPlan: ToDo List with Reminder",
-        "image": "../public/icon-006.webp",
+        "image": "/icon-006.webp",
         "companyName": "Smart Planner Ltd.",
         "description": "Manage tasks and reminders efficiently.",
         "size": 30,
@@ -68,7 +68,7 @@
     {
         "id": 3,
         "title": "FLIP - Focus Timer for Study",
-        "image": "../public/icon-007.webp",
+        "image": "/icon-007.webp",
         "companyName": "Flip Tech",
         "description": "Boost study focus with a smart timer.",
         "size": 22,
