@@ -7,6 +7,9 @@ import AppDetails from "../pages/AppDetails";
 import MyInstallations from "../pages/MyInstallations";
 import ErrorPage from "../pages/ErrorPage";
 
+
+const delay = () => new Promise((res) => setTimeout(res, 600));
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -16,6 +19,7 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
+                loader: delay,
             },
             {
                 path: "/apps",
@@ -24,10 +28,15 @@ const router = createBrowserRouter([
             {
                 path: "/apps/:id",
                 element: <AppDetails />,
+                loader: async ({ params }) => {
+                    await delay();
+                    return params.id;
+                },
             },
             {
                 path: "/my-installations",
                 element: <MyInstallations />,
+                loader: delay,
             },
         ],
     },
