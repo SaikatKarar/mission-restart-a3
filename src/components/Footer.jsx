@@ -7,7 +7,7 @@ export default function Footer() {
 
                 {/* Logo + About */}
                 <div>
-                    <h2 className="text-2xl font-bold text-white mb-3">YourBrand</h2>
+                    <h2 className="text-2xl font-bold text-white mb-3">AppHub</h2>
                     <p className="text-sm">
                         We build high-quality apps that help you stay productive, focused, and organized in your daily life.
                     </p>
@@ -57,7 +57,7 @@ export default function Footer() {
 
             {/* Bottom */}
             <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
-                © {new Date().getFullYear()} YourBrand. All rights reserved.
+                © {new Date().getFullYear()} AppHub. All rights reserved.
             </div>
         </footer>
     );

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import notFoundImg from "../assets/error-404.png";
+import notFoundImg from "../assets/App-Error.png";
 
-export default function ErrorPage() {
+export default function AppNotFound() {
     const navigate = useNavigate();
 
     return (
@@ -16,12 +16,12 @@ export default function ErrorPage() {
 
             {/* Title */}
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-                OPPS!! PAGE NOT FOUND
+                OPPS!! APP NOT FOUND
             </h1>
 
             {/* Subtitle */}
             <p className="text-gray-500 mt-3 max-w-md">
-                The page you are looking for is not available.
+                The app you are requesting is not found on our system. Please try another apps.
             </p>
 
             {/* Button */}

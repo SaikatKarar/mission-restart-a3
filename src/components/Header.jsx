@@ -118,7 +118,7 @@ export default function Header() {
 
                 <div className="mt-auto p-4 border-t border-gray-100">
                     <a
-                        href="https://github.com/saikatkarar"
+                        href="https://github.com/SaikatKarar/mission-restart-a3"
                         target="_blank"
                         rel="noreferrer"
                         className="w-full flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white py-2.5 rounded-xl font-semibold"

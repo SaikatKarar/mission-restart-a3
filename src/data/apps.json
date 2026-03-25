@@ -101,7 +101,7 @@
     {
         "id": 4,
         "title": "Pomocat - Cute Pomodoro Timer",
-        "image": "../public/icon-008.webp",
+        "image": "/icon-008.webp",
         "companyName": "Pomocat Studio",
         "description": "Cute timer to improve productivity.",
         "size": 20,
@@ -134,7 +134,7 @@
     {
         "id": 5,
         "title": "Time Planner: Schedule & Tasks",
-        "image": "../public/icon-009.webp",
+        "image": "/icon-009.webp",
         "companyName": "TimeSoft",
         "description": "Plan your daily schedule easily.",
         "size": 28,
@@ -167,7 +167,7 @@
     {
         "id": 6,
         "title": "Flip Clock: World Clock",
-        "image": "../public/icon-010.webp",
+        "image": "/icon-010.webp",
         "companyName": "Clockify",
         "description": "Stylish flip clock with world time.",
         "size": 18,
@@ -200,7 +200,7 @@
     {
         "id": 7,
         "title": "Morning Habits - Daily Routine",
-        "image": "../public/icon-011.webp",
+        "image": "/icon-011.webp",
         "companyName": "Habit Lab",
         "description": "Build strong daily habits.",
         "size": 26,
@@ -233,7 +233,7 @@
     {
         "id": 8,
         "title": "Focus Plant: Pomodoro Forest",
-        "image": "../public/icon-012.webp",
+        "image": "/icon-012.webp",
         "companyName": "Focus Labs",
         "description": "Stay productive with a growing plant.",
         "size": 24,
@@ -266,7 +266,7 @@
     {
         "id": 9,
         "title": "Notion - Notes & Tasks",
-        "image": "../public/icon-005.webp",
+        "image": "/icon-005.webp",
         "companyName": "Notion Labs",
         "description": "All-in-one workspace for notes and tasks.",
         "size": 45,
@@ -299,7 +299,7 @@
     {
         "id": 10,
         "title": "Google Keep",
-        "image": "../public/icon-006.webp",
+        "image": "/icon-006.webp",
         "companyName": "Google LLC",
         "description": "Quick notes and reminders.",
         "size": 20,
@@ -332,7 +332,7 @@
     {
         "id": 11,
         "title": "Todoist",
-        "image": "../public/icon-007.webp",
+        "image": "/icon-007.webp",
         "companyName": "Doist",
         "description": "Powerful task manager.",
         "size": 35,
@@ -365,7 +365,7 @@
     {
         "id": 12,
         "title": "TickTick",
-        "image": "../public/icon-008.webp",
+        "image": "/icon-008.webp",
         "companyName": "TickTick Team",
         "description": "To-do list and habit tracker.",
         "size": 33,
@@ -398,7 +398,7 @@
     {
         "id": 13,
         "title": "Evernote",
-        "image": "../public/icon-009.webp",
+        "image": "/icon-009.webp",
         "companyName": "Evernote Corp",
         "description": "Note-taking and organization.",
         "size": 50,
@@ -431,7 +431,7 @@
     {
         "id": 14,
         "title": "Microsoft To Do",
-        "image": "../public/icon-010.webp",
+        "image": "/icon-010.webp",
         "companyName": "Microsoft",
         "description": "Simple and smart to-do list.",
         "size": 27,
@@ -464,7 +464,7 @@
     {
         "id": 15,
         "title": "Habitica",
-        "image": "../public/icon-011.webp",
+        "image": "/icon-011.webp",
         "companyName": "Habitica Inc.",
         "description": "Gamify your habits.",
         "size": 29,
@@ -497,7 +497,7 @@
     {
         "id": 16,
         "title": "Clockify",
-        "image": "../public/icon-012.webp",
+        "image": "/icon-012.webp",
         "companyName": "Clockify Inc.",
         "description": "Time tracking software.",
         "size": 21,
@@ -530,7 +530,7 @@
     {
         "id": 17,
         "title": "RescueTime",
-        "image": "../public/icon-005.webp",
+        "image": "/icon-005.webp",
         "companyName": "RescueTime",
         "description": "Track your productivity.",
         "size": 40,
@@ -563,7 +563,7 @@
     {
         "id": 18,
         "title": "Focus To-Do",
-        "image": "../public/icon-006.webp",
+        "image": "/icon-006.webp",
         "companyName": "Focus Team",
         "description": "Pomodoro timer and tasks.",
         "size": 26,
@@ -596,7 +596,7 @@
     {
         "id": 19,
         "title": "Any.do",
-        "image": "../public/icon-007.webp",
+        "image": "/icon-007.webp",
         "companyName": "Any.do",
         "description": "Simple to-do list app.",
         "size": 23,
@@ -629,7 +629,7 @@
     {
         "id": 20,
         "title": "ZenKit",
-        "image": "../public/icon-008.webp",
+        "image": "/icon-008.webp",
         "companyName": "ZenKit Team",
         "description": "Project management tool.",
         "size": 38,

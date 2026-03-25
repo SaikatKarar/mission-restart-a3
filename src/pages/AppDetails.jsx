@@ -6,13 +6,14 @@ import { useInstall } from "../context/InstallContext";
 import { FaDownload, FaStar } from "react-icons/fa6";
 import { MdReviews } from "react-icons/md";
 import toast from "react-hot-toast";
+import AppNotFound from "../components/AppNotFound";
 
 export default function AppDetails() {
   const { id } = useParams();
   const app = apps.find((item) => item.id === Number(id));
 
   if (!app) {
-    return <p className="text-center py-20">App Not Found</p>;
+    return <AppNotFound />;
   }
   const navigate = useNavigate();
   const { installApp } = useInstall();

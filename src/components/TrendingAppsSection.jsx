@@ -59,7 +59,7 @@ export default function TrendingAppsSection() {
                 <div className="text-center">
                     <Link
                         to="/apps"
-                        className="px-8 py-3 rounded-full text-white bg-gradient-to-tl from-[#9F62F2] to-[#632EE3] hover:shadow-xl transition"
+                        className="px-8 py-3 rounded-sm text-white bg-gradient-to-tl from-[#9F62F2] to-[#632EE3] hover:shadow-xl transition cursor-pointer"
                     >
                         Show All
                     </Link>
