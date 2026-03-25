@@ -24,6 +24,8 @@ export default function AppDetails() {
     navigate("/my-installations");
   };
 
+
+
   const { installedApps } = useInstall();
 
   const isInstalled = installedApps.find(i => i.id === app.id);
