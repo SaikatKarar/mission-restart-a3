@@ -33,7 +33,7 @@ export default function Header() {
                         <Link to="/" className="flex items-center gap-2">
                             <img src={logo} alt="logo" className="w-12 h-12 object-contain" />
                             <span className="text-xl font-bold text-indigo-700 uppercase">
-                                Hero.IO
+                                AppHub
                             </span>
                         </Link>
                     </div>
@@ -58,7 +58,7 @@ export default function Header() {
                     </nav>
 
                     <a
-                        href="https://github.com/saikatkarar"
+                        href="https://github.com/SaikatKarar/mission-restart-a3"
                         target="_blank"
                         rel="noreferrer"
                         className="flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-lg"
@@ -84,7 +84,7 @@ export default function Header() {
                     <Link to="/" className="flex items-center gap-2">
                         <img src={logo} alt="logo" className="w-10 h-10 object-contain" />
                         <span className="text-xl font-bold text-indigo-700 uppercase tracking-wide">
-                            Hero.IO
+                            AppHub
                         </span>
                     </Link>
 

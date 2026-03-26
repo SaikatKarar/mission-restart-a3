@@ -16,7 +16,7 @@ export default function HeroSection() {
 
                     <p className="italic max-w-2xl mx-auto text-gray-600">
                         At{" "}
-                        <span className="text-indigo-600 font-bold">HERO.IO</span>, we craft
+                        <span className="text-indigo-600 font-bold">AppHub</span>, we craft
                         innovative apps designed to make everyday life simpler, smarter, and
                         more exciting. Our goal is to turn your ideas into digital
                         experiences that truly make an impact.
